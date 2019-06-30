@@ -40,3 +40,15 @@ html, body {
 .title-box > p:last-child {
     font-size: 3vh;
 }
+
+.footer {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer > p {
+    margin:0;
+}
