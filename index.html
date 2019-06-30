@@ -5,6 +5,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/technologies-grid.css">
   <link rel="stylesheet" type="text/css" href="css/contact-grid.css">
+  <link rel="stylesheet" type="text/css" href="css/scorll-animations.css">
 
   <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
@@ -19,14 +20,21 @@
 <body>
   <div class="wrapper">
     <div class="title-container">
-      <div data-aos="zoom-out" class="title-box">
+      <div data-aos="zoom-in" class="title-box">
         <p>MACIEJ</p>
         <p>KOPEĆ</p>
         <p>dimitor115</p>
       </div>
+      <a href="#tech-section" class="scroll-container">
+        <div class="scroll-button">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+        </div>
+      </a>
     </div>
-    <div class="tech-container">
-      <div class="tech-grid">
+    <div class="tech-container" id="tech-section">
+      <div data-aos="fade-right" class="tech-grid">
         <div class="grid-vue"></div>
         <div class="grid-kotlin"></div>
         <div class="grid-spring"></div>
@@ -38,7 +46,7 @@
       </div>
     </div>
     <div class="contact-container">
-      <div class="contact-grid">
+      <div data-aos="zoom-in" class="contact-grid">
         <a href="https://github.com/dimitor115/" class="grid-github"></a>
         <a href="https://www.linkedin.com/in/maciej-kope%C4%87-672954164/" class="grid-linkedin"></a>
       </div>
@@ -47,7 +55,9 @@
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init()
+    AOS.init({
+      duration: 1200
+    })
   </script>
 </body>
 
