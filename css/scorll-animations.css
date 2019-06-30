@@ -3,8 +3,8 @@
     width: 4vh;
     height: 6vh;
     position: fixed;
-    top:60%;
-    left: 26%;
+    top:calc(22% + 40vh);
+    left: calc(20% + 10vh);
 
   }
   .scroll-button {
